@@ -1,0 +1,15 @@
+<h1>Hello#index</h1>
+<p><%=@msg%> <p>
+<table border ="0">
+<tr>
+	 <th>TITLE</th>
+	 <th>CONTENT</th>
+</tr>
+
+<% @hello.each do |obj| %>
+	<tr>
+		<td><%= obj.title %></td>
+		<td><%= obj.content %></td>
+	</tr>
+<% end %>
+</table>

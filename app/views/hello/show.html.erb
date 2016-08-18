@@ -1,0 +1,26 @@
+<h1>Hello#index</h1>
+<p><%=@msg%> <p>
+<table border ="0">
+<tr>
+	 <th>TITLE</th>
+	 <th>CONTENT</th>
+</tr>
+<tr>
+	<th>ID:</th>
+	<td><%=@hello.id %></td>
+</tr>
+<tr>
+	<th>TITLE:</th>
+	<td><%= @hello.title%></td>
+</tr>
+
+<tr>
+	<th>CONTENT:</th>
+	<td><%= @hello.content %></td>
+</tr>
+</table>
+
+<p>
+	<a href="/hello/edit/<%= @hello.id %> ">編集</a>
+	<a href="hello/destory/<%= @hello.id %> "> 削除 </a>
+</p>

@@ -1,0 +1,25 @@
+// Place all the styles related to the hello controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+body{
+	background:#FFF0F0;
+}
+
+h1{
+	background:#FFAAAA;
+	color:#660000;
+	padding:5px;
+	font-size:16pt;
+}
+
+table tr th{
+   	padding:5px 10px;
+	background:#900;
+	color:white;
+}
+table tr td{
+   	padding:5px 10px;
+	background:#fcc;
+	color:600;
+}
