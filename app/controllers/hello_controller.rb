@@ -16,6 +16,20 @@ class HelloController < ApplicationController
 			@hello = Helo.find(params['id'])
 			# @hello = Helo.find(1)
 		end
-
 	end
+
+	def new
+		@title = "サンプルレイアウト"
+		@header_content ="データの追加"
+		@msg ="データの追加を行う"
+	end
+
+	def create
+		title = params['title']
+		content = params['content']
+		obj=Helo.new(title:title,content:content)
+		obj.save
+		redirect_to '/hello/index'
+	end
+
 end
